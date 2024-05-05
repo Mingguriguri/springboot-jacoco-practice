@@ -1,4 +1,4 @@
-package swe.group2.springbootjacocogradle.service;
+package swe.group2.springbootjacocogradle;
 
 public class ShippingService {
 
@@ -6,7 +6,7 @@ public class ShippingService {
         if (weight < 0) {
             throw new IllegalStateException("Please provide correct weight");
         }
-        else if (weight <= 2) {
+        if (weight <= 2) {
             return 5;
         }
         else if (weight <= 5) {
